@@ -1,0 +1,154 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\ASUS\\Desktop\\Automation\\playwright.config.ts",
+    "rootDir": "C:/Users/ASUS/Desktop/Automation/pomtest",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/ASUS/Desktop/Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/ASUS/Desktop/Automation/pomtest",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "addToCartUsingFixture.test.ts",
+      "file": "addToCartUsingFixture.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Page object test demo",
+          "file": "addToCartUsingFixture.test.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Checkout test_04",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30955,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\ASUS\\Desktop\\Automation\\pages\\checkout.ts",
+                            "column": 23,
+                            "line": 109
+                          },
+                          "message": "Error: page.waitForNavigation: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"networkidle\"\n  navigated to \"https://test460.nop-station.com/en/checkout/paymentmethod\"\n  \"domcontentloaded\" event fired\n  \"load\" event fired\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\checkout.ts:109\n\n\u001b[0m \u001b[90m 107 |\u001b[39m        \n \u001b[90m 108 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForNavigation({ waitUntil\u001b[33m:\u001b[39m \u001b[32m\"networkidle\"\u001b[39m })\u001b[33m,\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[@type='submit' and @class= 'button-1 shipping-method-next-step-button']\"\u001b[39m)\n \u001b[90m 111 |\u001b[39m         ])\u001b[33m;\u001b[39m\n \u001b[90m 112 |\u001b[39m    \u001b[0m\n\u001b[2m    at Checkout.clickNext2 (C:\\Users\\ASUS\\Desktop\\Automation\\pages\\checkout.ts:109:23)\u001b[22m\n\u001b[2m    at C:\\Users\\ASUS\\Desktop\\Automation\\pomtest\\addToCartUsingFixture.test.ts:45:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-01-14T19:23:47.075Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ASUS\\Desktop\\Automation\\test-results\\addToCartUsingFixture-Page-object-test-demo-Checkout-test-04\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\ASUS\\Desktop\\Automation\\test-results\\addToCartUsingFixture-Page-object-test-demo-Checkout-test-04\\video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\ASUS\\Desktop\\Automation\\test-results\\addToCartUsingFixture-Page-object-test-demo-Checkout-test-04\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "23a4a57a8f3b3565b855-21b2bd9d9e63f9db2506",
+              "file": "addToCartUsingFixture.test.ts",
+              "line": 29,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-01-14T19:23:46.241Z",
+    "duration": 32981.627,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
